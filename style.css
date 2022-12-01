@@ -22,7 +22,7 @@ body {
 
 #btn {
     background-color: greenyellow;
-    color: green;
+    color: rgb(0, 83, 0);
     width: 5rem;
     height: 5rem;
     font-size: 3rem;
@@ -32,7 +32,7 @@ body {
     border: .5rem solid darkgreen;
 }
 
-#btnd {
+----- {
     background-color: rgb(255, 23, 23);
     color: rgb(78, 4, 0);
     width: 5rem;
@@ -42,4 +42,9 @@ body {
     justify-content: center;
     align-items: center;
     border: 0.5rem solid darkred;
+}
+
+#btn:hover {
+    background-color: darkgreen;
+    color: rgb(0, 0, 0);
 }
