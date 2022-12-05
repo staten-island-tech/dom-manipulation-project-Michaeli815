@@ -5,9 +5,13 @@ const DOMSelectors = {
 }
 
 DOMSelectors.btn.addEventListener("click", function () {
-    let input = DOMSelectors.input.value;
-    DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${input} </p>`);
-
+    let task = DOMSelectors.input.value;
+    DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${task} </p>`);
     DOMSelectors.input.value = "";
 
 });
+const qsa = (els) => document.querySelectorall(els);
+const alltasks = qsa(`.avenger`);
+console.log(alltasks);
+
+let 

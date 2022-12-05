@@ -55,4 +55,14 @@ body {
     border-radius: 5rem;
 }
 
+p {
+    height: 5rem;
+    border-radius: 5rem;
+    background-color: lime;
+    font-size: 2rem;
+    border: 0.35rem solid black;
+    padding: .5rem;
+    margin: 1rem auto;
+}
+
 #container {}
