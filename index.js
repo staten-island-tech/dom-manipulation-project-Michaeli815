@@ -1,12 +1,13 @@
 const DOMSelectors = {
     btn:document.getElementById("btn"),
-    card:document.getElementById("card"),
-    input:document.getElementById("input"),
+    input:document.querySelector(`#input`),
     box:document.getElementById("container")
 }
 
 DOMSelectors.btn.addEventListener("click", function () {
     let input = DOMSelectors.input.value;
-    DOMSelectors.box.insertAdjacentHTML("afterend", `<p> ${input} </p>`);
+    DOMSelectors.box.insertAdjacentHTML("beforeend", `<p> ${input} </p>`);
+
+    DOMSelectors.input.value = "";
 
 });

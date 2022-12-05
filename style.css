@@ -48,3 +48,11 @@ body {
     background-color: darkgreen;
     color: rgb(0, 0, 0);
 }
+
+#card {
+    height: 3rem;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+#container {}
