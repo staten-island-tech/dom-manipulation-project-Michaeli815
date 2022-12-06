@@ -17,7 +17,9 @@ body {
 }
 
 #input {
-    height: 5rem;
+    height: 6rem;
+    width: 30rem;
+    border-radius: 5px;
 }
 
 #btn {
@@ -32,16 +34,15 @@ body {
     border: .5rem solid darkgreen;
 }
 
------ {
+#btnd {
     background-color: rgb(255, 23, 23);
     color: rgb(78, 4, 0);
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
     font-size: 3rem;
     padding: auto;
-    justify-content: center;
-    align-items: center;
     border: 0.5rem solid darkred;
+    border-radius: ;
 }
 
 #btn:hover {
@@ -57,12 +58,13 @@ body {
 
 p {
     height: 5rem;
-    border-radius: 5rem;
-    background-color: lime;
+    border-radius: 5px;
+    background-color: rgb(247, 236, 222);
     font-size: 2rem;
-    border: 0.35rem solid black;
-    padding: .5rem;
-    margin: 1rem auto;
+    border: 0.35rem solid rgb(81, 74, 74);
+    padding: 1rem;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-#container {}
