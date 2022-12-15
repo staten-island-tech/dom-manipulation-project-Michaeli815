@@ -34,7 +34,7 @@ body {
     border: .5rem solid darkgreen;
 }
 
-#btnd {
+.btnd {
     background-color: rgb(255, 23, 23);
     color: rgb(78, 4, 0);
     width: 4rem;

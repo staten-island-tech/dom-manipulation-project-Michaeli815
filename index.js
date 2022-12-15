@@ -7,18 +7,18 @@ const DOMSelectors = {
 
 DOMSelectors.btn.addEventListener("click", function () {
     let task = DOMSelectors.input.value;
-    DOMSelectors.box.insertAdjacentHTML("beforeend", `<p id="card"> ${task}.
-     <button id="btnd">-</button> </p>  `)
-
+    DOMSelectors.box.insertAdjacentHTML("beforeend", ` <div><p id="card"> ${task}.
+     <button class="btnd">-</button> </p> </div> `)
+erase();
 });
 
 const tasks = {
 btnd: btnd  = "#btnd",
-const: card = "#card"
+card: card = "#card"
 }
 // const tasks = {
-//     btnd:querySelector(`#btnd`),
-//     p:box.querySelector(`#card`),
+//     btnd:querySelectorAll(`#btnd`),
+//     p:box.querySelectorAll(`#card`),
 
 
 // }
@@ -35,16 +35,25 @@ DOMSelectors.btn.addEventListener("click", function () {
 
 
 
-
-// const remove = Array.from(document.querySelector("#btnd","#card"));
-// remove.forEach((buttond) => {
-//     buttond.addEventListener("click", function(){
-//         card.remove();
-// });
-// })
-
-tasks.btnd.addEventListener(`click`, function(e){
-    let btnd = del.target;
-    btnd.parentelement.parentelement.remove();
-
+function erase() {
+const remove = document.querySelectorAll(".btnd");
+remove.forEach((buttond) => {
+    buttond.addEventListener("click", (event) => {
+        event.target.parentElement.remove();
 });
+})};
+
+// const element = document.getElementById('btnd');
+// element.addEventListener("click", function () {
+// card.remove();
+// });
+
+// tasks.btnd.addEventListener("click", function(){
+//     card.element.element.remove();
+
+// });
+
+// btnd.addEventListener("click", function () {
+//     btnd.parentelement.remove();
+    
+// });
