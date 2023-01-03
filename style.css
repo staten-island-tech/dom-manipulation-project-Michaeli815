@@ -50,7 +50,7 @@ body {
     color: rgb(0, 0, 0);
 }
 
-#btnD:hover {
+.btnD:hover {
     background-color: darkRED;
     color: rgb(0, 0, 0);
 }
